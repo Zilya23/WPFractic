@@ -19,9 +19,9 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Регистрация" FontSize="36" Grid.ColumnSpan="2" MouseDown="TextBlock_MouseDown"/>
-        <TextBlock Text="name" Grid.Column="0" Grid.Row="1"/>
-        <TextBlock Text="password" Grid.Column="0" Grid.Row="2"/>
+        <TextBlock Text="Регистрация" FontSize="36" Grid.ColumnSpan="2" MouseDown="TextBlock_MouseDown" Foreground="White"/>
+        <TextBlock Text="name" Grid.Column="0" Grid.Row="1" Foreground="White"/>
+        <TextBlock Text="password" Grid.Column="0" Grid.Row="2" Foreground="White"/>
         <TextBox Grid.Column="1" Grid.Row="1" x:Name="login_txt" Margin="5"/>
         <TextBox Grid.Column="1" Grid.Row="2" x:Name="password_txt" Margin="5"/>
         <StackPanel Grid.Column="0" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="4" Grid.ColumnSpan="2"/>

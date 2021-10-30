@@ -33,7 +33,7 @@ namespace WpfApp1
             var z = users.Where(a => a.Name == txt_login.Text && a.Password == txt_password.Password).FirstOrDefault();
             if(z != null)
             {
-                MessageBox.Show(z.Name);
+            NavigationService.Navigate(new Page3());
             }
             else
             {

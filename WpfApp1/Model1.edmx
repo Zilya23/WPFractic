@@ -207,7 +207,7 @@
           <Key>
             <PropertyRef Name="ID_User" />
           </Key>
-          <Property Name="ID_User" Type="int" Nullable="false" />
+          <Property Name="ID_User" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Name" Type="varchar(max)" />
           <Property Name="Password" Type="varchar(max)" />
         </EntityType>

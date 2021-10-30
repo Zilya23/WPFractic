@@ -19,9 +19,9 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Авторизация" FontSize="36"/>
-        <TextBlock Text="Login" FontSize="36" Grid.Column="0" Grid.Row="1"/>
-        <TextBlock x:Name="txt_pass" Text="Password" FontSize="36" Grid.Column="0" Grid.Row="2"/>
+        <TextBlock Text="Авторизация" FontSize="36" Foreground="White"/>
+        <TextBlock Text="Login" FontSize="36" Grid.Column="0" Grid.Row="1" Foreground="White"/>
+        <TextBlock x:Name="txt_pass" Text="Password" FontSize="36" Grid.Column="0" Grid.Row="2" Foreground="#FFFBFBFB"/>
         <TextBox x:Name="txt_login" Grid.Column="1" Grid.Row="1"/>
         <PasswordBox x:Name="txt_password" Grid.Column="1" Grid.Row="2"/>
         <Button Content="log in" Grid.Column="0" Grid.Row="5" Click="auto_click"/>
