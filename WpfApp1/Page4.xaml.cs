@@ -21,14 +21,16 @@ namespace WpfApp1
     /// </summary>
     public partial class Page4 : Page
     {
-        public static ObservableCollection<Film> films { get; set; }
-        public Page4()
+        public Page4(Film n)
         {
             InitializeComponent();
-            films = new ObservableCollection<Film>(DataBaseConnect.connection.Film.ToList());
+            tb_Name.Text = n.Title;
+            img_Poster.Source = new BitmapImage(new Uri(n.Poster, UriKind.RelativeOrAbsolute));
+        }
 
-            var f = new Film();
-            this.DataContext = this;
+        private void btn_back_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.GoBack();
         }
     }
 }

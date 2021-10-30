@@ -14,7 +14,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <ListView ItemsSource="{Binding films}" Grid.Row="1">
+        <ListView ItemsSource="{Binding films}" Grid.Row="1" SelectionChanged="ListView_SelectionChanged">
             <ListView.ItemsPanel>
                 <ItemsPanelTemplate>
                     <UniformGrid Columns="3"/>

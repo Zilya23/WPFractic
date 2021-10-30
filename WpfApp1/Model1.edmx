@@ -87,6 +87,7 @@
           </Key>
           <Property Name="ID_Film" Type="int" Nullable="false" />
           <Property Name="ID_Operator" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" />
         </EntityType>
         <EntityType Name="Film_Screenwriter">
           <Key>
@@ -168,6 +169,7 @@
           </Key>
           <Property Name="ID_Serias" Type="int" Nullable="false" />
           <Property Name="ID_Director" Type="int" Nullable="false" />
+          <Property Name="ID" Type="int" />
         </EntityType>
         <EntityType Name="Serias_Genre">
           <Key>

@@ -33,5 +33,12 @@ namespace WpfApp1
             var s = new Serias();
             this.DataContext = this;
         }
+
+        private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            var n = (sender as ListView).SelectedItem as Film;
+
+            NavigationService.Navigate(new Page4(n));
+        }
     }
 }
