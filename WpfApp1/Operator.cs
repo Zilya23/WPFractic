@@ -17,7 +17,7 @@ namespace WpfApp1
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Operator()
         {
-            this.Film = new HashSet<Film>();
+            this.Film_Operator = new HashSet<Film_Operator>();
             this.Serias = new HashSet<Serias>();
         }
     
@@ -28,7 +28,7 @@ namespace WpfApp1
         public Nullable<decimal> Operator_Raiting { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Film> Film { get; set; }
+        public virtual ICollection<Film_Operator> Film_Operator { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Serias> Serias { get; set; }
     }

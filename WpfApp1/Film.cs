@@ -17,11 +17,11 @@ namespace WpfApp1
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Film()
         {
+            this.Film_Operator = new HashSet<Film_Operator>();
             this.Actor = new HashSet<Actor>();
             this.Director = new HashSet<Director>();
             this.Genre = new HashSet<Genre>();
             this.Nomination = new HashSet<Nomination>();
-            this.Operator = new HashSet<Operator>();
             this.Screenwriter = new HashSet<Screenwriter>();
         }
     
@@ -35,6 +35,8 @@ namespace WpfApp1
         public Nullable<int> Duration { get; set; }
         public Nullable<int> ID_Rating { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Film_Operator> Film_Operator { get; set; }
         public virtual Rating Rating { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Actor> Actor { get; set; }
@@ -44,8 +46,6 @@ namespace WpfApp1
         public virtual ICollection<Genre> Genre { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Nomination> Nomination { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Operator> Operator { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Screenwriter> Screenwriter { get; set; }
     }

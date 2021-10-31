@@ -29,13 +29,16 @@ namespace WpfApp1
         public virtual DbSet<Awards> Awards { get; set; }
         public virtual DbSet<Director> Director { get; set; }
         public virtual DbSet<Film> Film { get; set; }
+        public virtual DbSet<Film_Operator> Film_Operator { get; set; }
         public virtual DbSet<Genre> Genre { get; set; }
         public virtual DbSet<Nomination> Nomination { get; set; }
         public virtual DbSet<Operator> Operator { get; set; }
         public virtual DbSet<Rating> Rating { get; set; }
         public virtual DbSet<Screenwriter> Screenwriter { get; set; }
         public virtual DbSet<Serias> Serias { get; set; }
+        public virtual DbSet<Serias_Director> Serias_Director { get; set; }
         public virtual DbSet<Serias_Genre> Serias_Genre { get; set; }
+        public virtual DbSet<Serias_Nominat> Serias_Nominat { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<User> User { get; set; }
     }

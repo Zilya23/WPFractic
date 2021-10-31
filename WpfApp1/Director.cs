@@ -17,8 +17,8 @@ namespace WpfApp1
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Director()
         {
+            this.Serias_Director = new HashSet<Serias_Director>();
             this.Film = new HashSet<Film>();
-            this.Serias = new HashSet<Serias>();
         }
     
         public int ID_Director { get; set; }
@@ -28,8 +28,8 @@ namespace WpfApp1
         public Nullable<decimal> Director_Rating { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Film> Film { get; set; }
+        public virtual ICollection<Serias_Director> Serias_Director { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Serias> Serias { get; set; }
+        public virtual ICollection<Film> Film { get; set; }
     }
 }

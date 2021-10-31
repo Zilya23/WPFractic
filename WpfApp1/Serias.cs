@@ -17,9 +17,11 @@ namespace WpfApp1
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Serias()
         {
+            this.Serias_Director = new HashSet<Serias_Director>();
             this.Serias_Genre = new HashSet<Serias_Genre>();
+            this.Serias_Nominat = new HashSet<Serias_Nominat>();
+            this.Serias_Nominat1 = new HashSet<Serias_Nominat>();
             this.Actor = new HashSet<Actor>();
-            this.Director = new HashSet<Director>();
             this.Operator = new HashSet<Operator>();
             this.Screenwriter = new HashSet<Screenwriter>();
         }
@@ -37,11 +39,15 @@ namespace WpfApp1
     
         public virtual Rating Rating { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Serias_Director> Serias_Director { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Serias_Genre> Serias_Genre { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Actor> Actor { get; set; }
+        public virtual ICollection<Serias_Nominat> Serias_Nominat { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Director> Director { get; set; }
+        public virtual ICollection<Serias_Nominat> Serias_Nominat1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Actor> Actor { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Operator> Operator { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
